@@ -1,11 +1,112 @@
+/* 全体の背景と文字色 */
 body {
-    display: flex;
-    justify-content: center;
-    padding: 0px 10px;
+    background: linear-gradient(to bottom, #006999, #004666, #002333); /* グラデーションを追加 */
+    color: #ffffff; /* 文字色を白に変更 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* コンテナのスタイル */
 .container {
-    max-width: 768px;
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+/* プロフィールのスタイル */
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #004666; /* 背景色を変更 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto; /* 中央に配置 */
+    text-align: left;
+}
+
+.profile img {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile .info {
+    flex: 1;
+}
+
+.profile {
+    color: #00aeff; /* 見出しの色を変更 */
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.profile p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* 見出しのスタイル */
+h1 {
+    color: #00aeff; /* 見出しの色を変更 */
+    text-align: center;
+    background-color: #006999; /* 見出しの背景色を変更 */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
+    width: 100vw; /* 幅を画面全体に広げる */
+    margin-left: calc(-50vw + 50%); /* 中央揃え */
+}
+
+h2 {
+    color: #00aeff; /* 見出しの色を変更 */
+    margin-bottom: 10px;
+    font-size: 2em;
+    border-bottom: 2px solid #b6c4ca; /* アンダーラインを追加 */
+}
+
+h3 {
+    color: #00aeff; /* 見出しの色を変更 */
+    text-align: center;
+    background-color: #006999; /* 見出しの背景色を変更 */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
+    display: inline-block; /* コンテンツの幅に合わせる */
+    margin: 10px auto; /* 上下のマージンを追加して中央揃え */
+}
+
+/* リストのスタイル */
+ul {
+    list-style-type: none; /* デフォルトのリストスタイルを無効にする */
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px; /* 左右のマージンを追加して中央寄せ */
+    position: relative;
+    padding-left: 20px; /* ドットのスペースを確保 */
+    white-space: nowrap; /* 改行を無効にする */
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00aeff; /* ドットの色を変更 */
+}
+
+/* 画像のスタイル */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #00aeff; /* 画像の枠の色を変更 */
 }
