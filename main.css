@@ -16,11 +16,14 @@ body {
 .intro {
     font-family: 'Badeen Display', sans-serif; /* 序文にBadeen Displayフォントを適用 */
     text-align: center;
-    margin: 20px 0;
+
     font-size: 2.5em; /* フォントサイズを大きくする */
     background-color: rgba(211, 211, 211, 0.5); /* 薄灰色の背景を追加 */
     padding: 10px;
     border-radius: 5px;
+    width: 100vw; /* 幅を画面全体に広げる */
+    line-height: 0.8; /* 縦幅を潰す */
+    margin-left: calc(-50vw + 50%); /* 中央揃え */
 }
 
 /* プロフィールのスタイル */
