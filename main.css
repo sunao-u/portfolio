@@ -2,7 +2,7 @@
 body {
     background: linear-gradient(to bottom, #006999, #004666, #002333); /* グラデーションを追加 */
     color: #ffffff; /* 文字色を白に変更 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Oswald', sans-serif; /* フォントを変更 */
 }
 
 /* コンテナのスタイル */
@@ -10,6 +10,17 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* 序文のスタイル */
+.intro {
+    font-family: 'Badeen Display', sans-serif; /* 序文にBadeen Displayフォントを適用 */
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em; /* フォントサイズを大きくする */
+    background-color: rgba(211, 211, 211, 0.5); /* 薄灰色の背景を追加 */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* プロフィールのスタイル */
@@ -36,23 +47,39 @@ body {
 
 .profile .info {
     flex: 1;
+    background-color: rgba(211, 211, 211, 0.5); /* 薄灰色の背景を追加 */
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.profile {
+.profile h2 {
     color: #00aeff; /* 見出しの色を変更 */
     margin-bottom: 10px;
     font-size: 2em;
+    border-bottom: 2px solid #00aeff; /* アンダーラインを追加 */
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
+}
+
+.profile ph {
+    color: #00aeff; /* 見出しの色を変更 */
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
 }
 
 .profile p {
     margin: 5px 0;
     font-size: 1.2em;
     line-height: 1.5;
+    font-weight: 400; /* 通常のフォントウェイトを指定 */
+    background-color: rgba(211, 211, 211, 0.5); /* 薄灰色の背景を追加 */
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* 見出しのスタイル */
 h1 {
-    color: #00aeff; /* 見出しの色を変更 */
+    color: #fa960b; /* 見出しの色を変更 */
     text-align: center;
     background-color: #006999; /* 見出しの背景色を変更 */
     padding: 10px;
@@ -60,13 +87,15 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
     width: 100vw; /* 幅を画面全体に広げる */
     margin-left: calc(-50vw + 50%); /* 中央揃え */
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
 }
 
 h2 {
-    color: #00aeff; /* 見出しの色を変更 */
+    color: #afc8d4; /* 見出しの色を変更 */
     margin-bottom: 10px;
     font-size: 2em;
     border-bottom: 2px solid #b6c4ca; /* アンダーラインを追加 */
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
 }
 
 h3 {
@@ -78,30 +107,37 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
     display: inline-block; /* コンテンツの幅に合わせる */
     margin: 10px auto; /* 上下のマージンを追加して中央揃え */
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
 }
 
-/* リストのスタイル */
-ul {
+/* スキルセクションのスタイル */
+.skills-section {
+    margin: 20px 0;
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h2 {
+    background-color: #004666; /* 見出しの背景色を変更 */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
+}
+
+.skills-category ul {
     list-style-type: none; /* デフォルトのリストスタイルを無効にする */
     padding: 0;
     text-align: left;
 }
 
-ul li {
-    display: inline-block;
-    margin: 10px 20px; /* 左右のマージンを追加して中央寄せ */
-    position: relative;
-    padding-left: 20px; /* ドットのスペースを確保 */
-    white-space: nowrap; /* 改行を無効にする */
-}
-
-ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #00aeff; /* ドットの色を変更 */
+.skills-category ul li {
+    background-color: rgba(211, 211, 211, 0.5); /* 薄灰色の背景を追加 */
+    padding: 5px 10px; /* 縦のパディングを小さくする */
+    border-radius: 5px;
+    margin: 5px 0; /* 各項目の間にマージンを追加 */
+    line-height: 1.2; /* 行の高さを調整 */
 }
 
 /* 画像のスタイル */
