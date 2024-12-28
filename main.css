@@ -1,5 +1,6 @@
 /* 全体の背景と文字色 */
 body {
+    max-width: 1190px;
     background: linear-gradient(to bottom, #006999, #004666, #002333); /* グラデーションを追加 */
     color: #ffffff; /* 文字色を白に変更 */
     font-family: 'Oswald', sans-serif; /* フォントを変更 */
@@ -243,4 +244,17 @@ img {
     padding: 0;
     margin: 0;
     align-items: top; /* 中央揃えにする */
+}
+
+
+h5 {
+    color: #fa960b; /* 見出しの色を変更 */
+    text-align: center;
+    background-color: #006999; /* 見出しの背景色を変更 */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 見出しに影を追加 */
+    width: 100vw; /* 幅を画面全体に広げる */
+    margin-left: calc(-50vw + 50%); /* 中央揃え */
+    font-weight: 700; /* 太めのフォントウェイトを指定 */
 }
