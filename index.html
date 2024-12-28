@@ -7,130 +7,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sunao_u portfolio</title>
     <link rel="stylesheet" href="main.css">
+    <script src="animations.js" defer></script>
   </head>
   <body>
-    <div class = container>
-    <!-- main content -->
-  <div class="intro">
-    <div style="text-align: center">
-    Thank you for your visitting.<br>
-    This is a portfolio of sunao_u.
-    </div>
-  </div>
+    <div class="container">
+      <!-- main content -->
+      <div class="intro animate-on-scroll">
+        <div style="text-align: center">
+          Thank you for your visitting.<br>
+          This is a portfolio of sunao_u.
+        </div>
+      </div>
 
-<div style="text-align: center">
-    <h1>About me</h1>
-</div>
+      <div style="text-align: center">
+        <h1 class="animate-on-scroll">About me</h1>
+      </div>
 
-<!-- picture of me-->
-<div class="profile">
-    <img src="me.jpg" alt="me">
-    <div class="info">
-        <ph>sunao_u</ph>
-        <p>OMUCT 21s</p>
-        <p><a href="https://x.com/opuct_robotclub">OMUCT Robot Club</a>(Mechanic) OB</p>
-        <p><a href="https://x.com/guidingrailman">Twitter</a>(@guidingrailman)</p>
-    </div>
-</div>  
+      <!-- picture of me-->
+      <div class="profile animate-on-scroll">
+        <img src="me.jpg" alt="me">
+        <div class="info">
+          <ph>sunao_u</ph>
+          <p>OMUCT 21s</p>
+          <p><a href="https://x.com/opuct_robotclub">OMUCT Robot Club</a>(Mechanic) OB</p>
+          <p><a href="https://x.com/guidingrailman">Twitter</a>(@guidingrailman)</p>
+        </div>
+      </div>  
 
-    <div style="text-align: left">
-
-      <div class="skills-section">
-        <h1>Skills</h1>
-        <div class="skills-category">
+      <div style="text-align: left">
+        <div class="skills-section animate-on-scroll">
+          <h1>Skills</h1>
+          <div class="skills-category">
             <h2>Programming Languages</h2>
             <ul>
-                <li>C++</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
-        </div>
+          </div>
 
-        <div class="skills-category">
+          <div class="skills-category">
             <h2>CAD Operating</h2>
             <ul>
-                <li>Autodesk Fusion</li>
-                <li>Creo Parametric</li>
-                <li>FreeCAD</li>
-                <li>iCAD SX</li>
-                <li>KiCAD</li>
-                <li>MicroCADAM</li>
-        </div>
-        <div class="skills-category">
+              <li>Autodesk Fusion</li>
+              <li>Creo Parametric</li>
+              <li>FreeCAD</li>
+              <li>iCAD SX</li>
+              <li>KiCAD</li>
+              <li>MicroCADAM</li>
+            </ul>
+          </div>
+          <div class="skills-category">
             <h2>Other</h2>
             <ul>
-                <li>Customize 3D Printer</li>
-                <li>Using Machine Tools (CNC, manual)</li>
-                <li>Building Air Pressure Circuit</li>
-                <li>Building Electric Circuit</li>
-                <li>PowerPoint, Excel, Word</li>
-                <li>LibreOffice</li>
+              <li>Customize 3D Printer</li>
+              <li>Using Machine Tools (CNC, manual)</li>
+              <li>Building Air Pressure Circuit</li>
+              <li>Building Electric Circuit</li>
+              <li>PowerPoint, Excel, Word</li>
+              <li>LibreOffice</li>
             </ul>
-        </div>
-        <div class="skills-category">
+          </div>
+          <div class="skills-category">
             <h2>Favorite Pursuit</h2>
             <ul>
-                <li>Robot Design</li>
-                <li>Robot Control</li>
-                <li>Robot Mechanism</li>
-                <li>Robot Programming</li>
-                <li>Mechanics, Dynamics</li>
-                <li>Cooking</li>
+              <li>Robot Design</li>
+              <li>Robot Control</li>
+              <li>Robot Mechanism</li>
+              <li>Robot Programming</li>
+              <li>Mechanics, Dynamics</li>
+              <li>Cooking</li>
             </ul>
+          </div>
         </div>
+        
+        <div class="works-section animate-on-scroll">
+          <h1>Works</h1>
+          <h2>Works in class</h2>
+          <h3>2023</h3>
+          <div class="work-item">
+            <ul>
+              <li><h4>CAD designing</h4></li>
+              <!-- picture of CAD Class-->
+              <img src="CAD-Class.png" alt="CAD-Class" class="event-image">
+            </ul>
+              <div class="caption" onclick="toggleCaption(this)">
+                <p class="caption-jp">2023年度のCAD設計製図の授業で製作した、マイナスドライバビットの持ち手のCADデータです。<br>高電圧による電磁加速でマイナスドライバビットを射出するレールガンをイメージしてモデリングしました。電源ユニットから伸びるプラグや排気ファン、ダクト、リボルバー型のビットホルダーといった細かいこだわりをふんだんに盛り込んだ逸品に仕上がっています。</p>
+                <p class="caption-en active">This is the CAD data for the handle of a flat head screwdriver bit that was created in the 2023 CAD design and drafting class. <br>It was modeled based on the image of a rail gun that fires flathead screwdriver bits using electromagnetic acceleration due to high voltage. It is a masterpiece that incorporates a lot of attention to detail such as the plug extending from the power supply unit, exhaust fan, duct, and revolver-shaped bit holder.</p>
+              </div>
+          </div>
+
+          <div class="work-item">
+            <ul>
+              <li><h4>Special Research</h4></li>
+              <!-- picture of Special Research-->
+              <img src="Special-Research.jpg" alt="Special Research" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2023年度実施の特別研究(前期分)にて設計製作した電動紙飛行機ランチャーです。<br>ストックされている紙飛行機を確実に一枚ずつ取り出してそれなりのスピードで連続的に射出することができます。</p>
+              <p class="caption-en active">This is an electric paper airplane launcher designed and manufactured in the special research conducted in 2023 (first semester).<br>It can reliably take out one paper airplane at a time from the stock and continuously launch them at a reasonable speed.</p>
+          </div>
+          </div>
+
+          <h3>2024</h3>
+          <div class="work-item">
+            <ul>
+              <li><h4>Basic Research</h4></li>
+              <!-- picture of Basic Research-->
+              <img src="Basic-Research.jpg" alt="Basic Research" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2024年度実施の基礎研究(前期)にて製作した自動寿司提供システム"EOPS"です。<br>押されたボタンに対応した寿司を自動で取り出し、自動で皿に乗せ、自動で配膳します。<br>制御担当でした。全ての制御はリミットスイッチで管理され、既定のシーケンスに応じて動作します。</p>
+              <p class="caption-en active">This is the automatic sushi serving system "EOPS" created in the basic research conducted in 2024 (first semester).<br>It automatically takes out the sushi corresponding to the pressed button, places it on a plate, and serves it automatically.<br>I was in charge of control. All controls are managed by limit switches and operate according to the specified sequence.</p>
+          </div>
+          </div>
+
+          <h2>Works in Extracurricular Activities</h2>
+
+          <h3>2022</h3>
+          <div class="work-item">
+            <ul>
+              <li><h4>KINKI Area Robot Contest</h4></li>
+              <!-- picture of Kinki Area Robot Contest-->
+              <img src="Kinki-Robocon.jpg" alt="Kinki Robot Contest" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2022年の近畿地区合同ロボコンで製作したロボット"行くぞ!国技館"です。<br>足回りを除く全ての機構がエアシリンダで動作するという点が特徴でした。LiDARが搭載されており、機能としては自動操縦にも対応しています。</p>
+              <p class="caption-en active">This is the robot "行くぞ!国技館(Let's go! Kokugikan)" created for the Kinki Area Robot Contest in 2021.<br>The feature was that all mechanisms except the drive system operated with air cylinders. It was equipped with LiDAR and also supported autonomous driving as a function.</p>
+          </div>
+          </div>
+
+          <div class="work-item">
+            <ul>
+              <li><h4>KOSEN ROBOCON 2022</h4></li>
+              <!-- picture of Kosen2022-->
+              <img src="2022Kosen.jpg" alt="Kosen2022 -1" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2022年の高専ロボコンで製作したロボット"AIRsROCK"です。<br>点数がそれぞれ決まっている的に紙飛行機を乗せるというルールに対して「最難関"最奥の的"のみを狙う」という尖ったアプローチを採用したロボットでした。最大で15機の紙飛行機を一試合のうちに最奥の的に入れることができ、狙撃性能に優れていました。<br>全国大会にてマブチモーター特別賞受賞。</p>
+              <p class="caption-en active">This is the robot "AIRsROCK" created for the Kosen Robocon 2022.<br>The rule was to place paper airplanes on targets with different scores, and we adopted a sharp approach of aiming only at the "most difficult and deepest target". The robot could place up to 15 paper airplanes on the deepest target in one match, demonstrating excellent sniping performance.<br>It won the Mabuchi Motor Special Award at the national tournament.</p>
+          </div>
+          </div>
+
+          <h3>2023</h3>
+          <div class="work-item">
+            <ul>
+              <li><h4>the Championship of Robot Engineer(CoRE)2023</h4></li>
+              <!-- picture of CoRE-->
+              <img src="CoRE.jpg" alt="CoRE 2023" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2023年のCoREという大会において製作したロボット"※ひんじ卍ひんじ会のロボット"です。<br>複数台のロボットがフライングディスクを投げ合うという対戦競技に向けて、射程と威力と装弾数を追及して製作しました。<br>当時の大会で唯一床から拾ったディスクを拾って再利用するという画期的な機能を搭載していました。<br>拾い上げ機能が評価され、革新的技術賞を受賞。<br>※「ひんじ卍ひんじ会」はチーム名</p>
+              <p class="caption-en active">This is the robot created by the team "Hinge Manji Hinge Kai" for the CoRE (the Championship of Robot Engineer) in 2023.<br>It was designed for a competitive game where multiple robots throw flying discs at each other, focusing on range, power, and ammunition capacity.<br>It was the only robot in the competition that could pick up and reuse discs from the floor, a groundbreaking feature at the time.<br>The pickup feature was highly evaluated, and it won the Innovative Technology Award.</p>
+          </div>
+          </div>
+
+          <div class="work-item">
+            <ul>
+              <li><h4>KOSEN ROBOCON 2023</h4></li>
+              <!-- picture of Kosen2023-->
+              <img src="2023Kosen.jpg" alt="Kosen2023 -1" class="event-image">
+              <img src="2023Kosen-2.jpg" alt="Kosen2023 -2" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2023年の高専ロボコンで製作したロボット"鴉"です。<br>相手と共通のフィールドを周回しながら吊るされた32個のオブジェクトを回収するという競技に対して、高得点オブジェクトを迅速に回収して過半数以上の点数を相手よりも先に確保することをコンセプトとして製作しました。<br>私の担当した箇所は高所のオブジェクトを回収するための伸縮アーム機構で、機構そのものに1kgの重量制限が課されていながらも高い信頼性を誇っていました。<br>ろぼっと倶楽部初の全国優勝を達成。<br>
+              <a href="https://www.youtube.com/watch?v=dDdRVrF7438">試合の動画</a></p>
+              <p class="caption-en active">This is the robot "鴉(Karasu)" created for the Kosen Robocon 2023.<br>The competition involved collecting 32 suspended objects while circling a common field with the opponent. The concept was to quickly collect high-scoring objects and secure more than half of the points before the opponent.<br>I was responsible for the telescopic arm mechanism to collect high objects. Despite the 1kg weight limit on the mechanism itself, it boasted high reliability.<br>We achieved the first national victory for the Robot Club.<br>
+              <a href="https://www.youtube.com/watch?v=dDdRVrF7438">Match video</a></p>
+          </div>
+          </div>
+
+          <h3>2024</h3>
+          <div class="work-item">
+            <ul>
+              <li><h4>KANSAI SPRING ROBOCON 2024</h4></li>
+              <!-- picture of Spring-Robocon -->
+              <img src="Spring-Robocon.jpg" alt="Spring Robocon 2024" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2024年の関西春ロボコンで製作したロボット"メカヒンジ(非公認)"です。<br>30日という短い期間しか与えられていないにもかかわらず複雑なシステムを製作した結果見事に惨敗しました。<br>メカヒンジはチーム名「HIN-G」に由来。</p>
+              <p class="caption-en active">This is the robot "Mecha Hinge (unofficial)" created for the Kansai Spring Robocon 2024.<br>Despite having only 30 days, we created a complex system and unfortunately lost.<br>Mecha Hinge is derived from the team name "HIN-G".</p>
+          </div>
+          </div>
+
+          <div class="work-item">
+            <ul> 
+              <li><h4>KOSEN ROBOCON 2024</h4></li>
+              <!-- picture of Kosen2024-->
+              <img src="2024Kosen.jpg" alt="Kosen2024 -1" class="event-image">
+              <img src="2024Kosen-2.jpg" alt="Kosen2024 -2" class="event-image">
+            </ul>
+            <div class="caption" onclick="toggleCaption(this)">
+              <p class="caption-jp">2024年の高専ロボコンで製作したロボット"ひまり"です。プロジェクト名は"銀火"でした。<br>ロボットがロボットを投げ飛ばし、投げ飛ばされたロボットが作業をしてもといたエリアに帰還するというかなり過酷なルールでした。<br>私が担当した「ロボットを飛ばすロボット」はほかのチームで実現できたところが存在しない電動射出を実現しており、堅牢なハードウェアに仕上がっていました。<br>地区大会で一度敗れ、全国大会でも一度敗れながらその度に復活を遂げ、与えられたチャンスを逃すことなく勝利しました。<br>ろぼっと俱楽部史上初、高専ロボコン史上3校目となる2連覇達成。<br>
+              <a href="https://www.youtube.com/watch?v=W5jt8yTYAWg">試合の動画</a></p>
+              <p class="caption-en active">This is the robot "Himari" created for the Kosen Robocon 2024. The project name was "銀火(Ginga)".<br>The rules were quite harsh, with robots throwing other robots, and the thrown robots performing tasks and returning to their original area.<br>The "robot that throws robots" I was in charge of achieved electric ejection, which no other team could realize, and had robust hardware.<br>We lost once in the regional tournament and once in the national tournament, but each time we came back and won without missing the given opportunities.<br>We achieved the first consecutive victory in the history of the Robot Club and the third consecutive victory in the history of Kosen Robocon.<br>
+              <a href="https://www.youtube.com/watch?v=W5jt8yTYAWg">Match video</a></p>
+          </div>
+
+            
+          </div>
+          <!-- content end-->
+        </div>
+      </div>
     </div>
-    
-    <div class="works-section">
-        <h1>Works</h1>
-        <h2>Works in class</h2>
-        <h3>2023</h3>
-  <ul>
-    <li><h4>CAD designing</h4></li><br>
-    <!-- picture of CAD work-->
-  </ul>
-  
-  <ul>
-    <li><h4>Special Research</h4></li><br>
-  </ul>
-    <h3>2024</h3>
-  
-  <ul>
-    <li><h4>Basic Research</h4></li><br>
-  </ul>
-
-    <h2>Works in Extracurricular Activities</h2>
-    <h3>2021</h3>
-
-  <ul>
-  <li><h4>KINKI Area Robot Contest</h4></li>
-  </ul>
-
-    <h3>2022</h3>
-  <ul>
-  <li><h4>KOSEN ROBOCON 2022</h4></li>
-  </ul>
-
-    <h3>2023</h3>
-  <ul>
-  <li><h4>the Championship of Robot Engineer(CoRE)2023</h4></li>
-  </ul>
-
-  <ul>
-  <li><h4>KOSEN ROBOCON 2023</h4></li>
-  </ul>
-
-    <h3>2024</h3>
-  <ul>
-  <li><h4>KANSAI SPRING ROBOCON 2024</h4></li>
-  </ul>
-
-  <ul>
-  <li><h4>KOSEN ROBOCON 2024</h4></li>
-  </ul>
-    <!-- content end-->
-
-   </div>
-  </div>
   </body>
 </html>
