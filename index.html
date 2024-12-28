@@ -41,6 +41,12 @@
         }
       }
     </style>
+    <script>
+      function toggleImage(imgId, imgSrc1, imgSrc2) {
+        const img = document.getElementById(imgId);
+        img.src = img.src.includes(imgSrc1) ? imgSrc2 : imgSrc1;
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -204,8 +210,8 @@
             <ul>
               <li><h4>KOSEN ROBOCON 2023</h4></li>
               <!-- picture of Kosen2023-->
-              <img src="2023Kosen.jpg" alt="Kosen2023 -1" class="event-image">
-              <img src="2023Kosen-2.jpg" alt="Kosen2023 -2" class="event-image">
+              <img src="2023Kosen.jpg" alt="Kosen2023 -1" class="event-image" id="kosen2023-img">
+              <button onclick="toggleImage('kosen2023-img', '2023Kosen.jpg', '2023Kosen-2.jpg')">switch picture</button>
             </ul>
             <div class="caption" onclick="toggleCaption(this)">
               <p class="caption-jp">2023年の高専ロボコンで製作したロボット"鴉"です。<br>相手と共通のフィールドを周回しながら吊るされた32個のオブジェクトを回収するという競技に対して、高得点オブジェクトを迅速に回収して過半数以上の点数を相手よりも先に確保することをコンセプトとして製作しました。<br>私の担当した箇所は高所のオブジェクトを回収するための伸縮アーム機構で、機構そのものに1kgの重量制限が課されていながらも高い信頼性を誇っていました。<br>ろぼっと倶楽部初の全国優勝を達成。<br>
@@ -232,8 +238,8 @@
             <ul> 
               <li><h4>KOSEN ROBOCON 2024</h4></li>
               <!-- picture of Kosen2024-->
-              <img src="2024Kosen-1.jpg" alt="Kosen2024 -1" class="event-image">
-              <img src="2024Kosen-2.jpg" alt="Kosen2024 -2" class="event-image">
+              <img src="2024Kosen-1.jpg" alt="Kosen2024 -1" class="event-image" id="kosen2024-img">
+              <button onclick="toggleImage('kosen2024-img', '2024Kosen-1.jpg', '2024Kosen-2.jpg')">switch picture</button>
             </ul>
             <div class="caption" onclick="toggleCaption(this)">
               <p class="caption-jp">2024年の高専ロボコンで製作したロボット"ひまり"です。プロジェクト名は"銀火"でした。<br>ロボットがロボットを投げ飛ばし、投げ飛ばされたロボットが作業をしてもといたエリアに帰還するというかなり過酷なルールでした。<br>私が担当した「ロボットを飛ばすロボット」はほかのチームで実現できたところが存在しない電動射出を実現しており、堅牢なハードウェアに仕上がっていました。<br>地区大会で一度敗れ、全国大会でも一度敗れながらその度に復活を遂げ、与えられたチャンスを逃すことなく勝利しました。<br>ろぼっと俱楽部史上初、高専ロボコン史上3校目となる2連覇達成。<br>
