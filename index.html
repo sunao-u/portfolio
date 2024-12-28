@@ -8,6 +8,39 @@
     <title>sunao_u portfolio</title>
     <link rel="stylesheet" href="main.css">
     <script src="animations.js" defer></script>
+    <style>
+      body {
+        max-width: 1200px; /* 最大幅を1200pxに設定 */
+        margin: 0 auto; /* 中央揃え */
+        overflow-x: hidden; /* 横スクロールを隠す */
+      }
+      .profile, .work-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .profile img, .event-image {
+        max-width: 100%;
+        height: auto;
+      }
+      .info, .caption {
+        flex: 1;
+        margin-left: 20px;
+      }
+      @media (max-width: 768px) {
+        .profile, .work-item {
+          flex-direction: column;
+          align-items: center;
+        }
+        .profile img {
+          margin: 0 auto; /* 画像を中央揃え */
+        }
+        .info, .caption {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -207,6 +240,7 @@
               <a href="https://www.youtube.com/watch?v=W5jt8yTYAWg">試合の動画</a></p>
               <p class="caption-en active">This is the robot "Himari" created for the Kosen Robocon 2024. The project name was "銀火(Ginga)".<br>The rules were quite harsh, with robots throwing other robots, and the thrown robots performing tasks and returning to their original area.<br>The "robot that throws robots" I was in charge of achieved electric ejection, which no other team could realize, and had robust hardware.<br>We lost once in the regional tournament and once in the national tournament, but each time we came back and won without missing the given opportunities.<br>We achieved the first consecutive victory in the history of the Robot Club and the third consecutive victory in the history of Kosen Robocon.<br>
               <a href="https://www.youtube.com/watch?v=W5jt8yTYAWg">Match video</a></p>
+          </div>
           </div>
 
             
